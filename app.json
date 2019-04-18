@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#ffff00",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText":"安之"
+  }
+}
