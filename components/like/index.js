@@ -8,9 +8,6 @@ Component({
     like: {
       type: Boolean,
       value: false,
-      observer: () => {
-
-      },
     },
     count: {
       type: Number,
@@ -37,6 +34,9 @@ Component({
         count: counts,
         like: !like
       })
+      const behavior = this.properties.like ? 'like' : 'cancel'
+      // 激活自定义事件
+      this.triggerEvent('like', { behavior }, {})
     }
   }
 })
