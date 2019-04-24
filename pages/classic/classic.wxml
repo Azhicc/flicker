@@ -1,4 +1,6 @@
-<!--pages/classic/classic.wxml-->
-<v-epsoide index="{{1}}"/>
-<v-like bind:like="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}"/>
-<v-movie img="{{classicData.image}}" content="{{classicData.content}}"/>
+<!-- pages/classic/classic.wxml -->
+<view class="header">
+    <v-epsoide class="epsoide" index="{{classicData.index}}" />
+    <v-like class="like" bind:like="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" />
+</view>
+<v-movie img="{{classicData.image}}" content="{{classicData.content}}" />
